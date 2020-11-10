@@ -5,11 +5,20 @@ Accueil
 {% endblock %}
 
 {% block content %}
-
+<div class="ui items">
 {% for product in prodList %}
-
-{{ product.name }}
-
+<div class="item">
+    <div class="content">
+        <div class="header">{{ product.name }}</div>
+        <div class="meta">
+            <span class="price">{{ product.price }}</span>
+            <span class="prod_id">{{ product.id }}</span>
+        </div>
+        <div class="description">
+            <p>{{ product.description }}</p>
+        </div>
+    </div>
+</div>
 {% endfor %}
-
+</div>
 {% endblock %}

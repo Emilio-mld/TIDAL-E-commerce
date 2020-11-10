@@ -44,20 +44,20 @@ class __TwigTemplate_458c05e62f04d4b3c509e25a9cc5cf53b1b3e302a35fa708f64794262d5
     ";
         // line 4
         $this->displayBlock('head', $context, $blocks);
-        // line 8
+        // line 14
         echo "</head>
 <body>
 <section id=\"content\">
 ";
-        // line 11
+        // line 17
         $this->displayBlock('content', $context, $blocks);
-        // line 12
+        // line 18
         echo "</section>
 <footer id=\"footer\">
     ";
-        // line 14
+        // line 20
         $this->displayBlock('footer', $context, $blocks);
-        // line 17
+        // line 23
         echo "</footer>
 </body>
 </html>";
@@ -73,6 +73,12 @@ class __TwigTemplate_458c05e62f04d4b3c509e25a9cc5cf53b1b3e302a35fa708f64794262d5
         // line 6
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"vendor/semantic/ui/dist/semantic.min.css\">
+    <script
+    src=\"https://code.jquery.com/jquery-3.1.1.min.js\"
+    integrity=\"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=\"
+    crossorigin=\"anonymous\"></script>
+    <script src=\"vendor/semantic/ui/dist/semantic.min.js\"></script>
     ";
     }
 
@@ -82,17 +88,17 @@ class __TwigTemplate_458c05e62f04d4b3c509e25a9cc5cf53b1b3e302a35fa708f64794262d5
         echo "  ";
     }
 
-    // line 11
+    // line 17
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 14
+    // line 20
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 15
+        // line 21
         echo "    &copy; Copyright 2020 - Site dévelloper par Luc, Thomas, François et Emilio
     ";
     }
@@ -104,7 +110,7 @@ class __TwigTemplate_458c05e62f04d4b3c509e25a9cc5cf53b1b3e302a35fa708f64794262d5
 
     public function getDebugInfo()
     {
-        return array (  96 => 15,  92 => 14,  86 => 11,  74 => 6,  71 => 5,  67 => 4,  61 => 17,  59 => 14,  55 => 12,  53 => 11,  48 => 8,  46 => 4,  41 => 1,);
+        return array (  102 => 21,  98 => 20,  92 => 17,  74 => 6,  71 => 5,  67 => 4,  61 => 23,  59 => 20,  55 => 18,  53 => 17,  48 => 14,  46 => 4,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -115,6 +121,12 @@ class __TwigTemplate_458c05e62f04d4b3c509e25a9cc5cf53b1b3e302a35fa708f64794262d5
     {% block head %}
     <meta charset=\"utf-8\">
     <title>{% block title %}  {% endblock %}</title>
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"vendor/semantic/ui/dist/semantic.min.css\">
+    <script
+    src=\"https://code.jquery.com/jquery-3.1.1.min.js\"
+    integrity=\"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=\"
+    crossorigin=\"anonymous\"></script>
+    <script src=\"vendor/semantic/ui/dist/semantic.min.js\"></script>
     {% endblock %}
 </head>
 <body>
